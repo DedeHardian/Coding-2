@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login and Multi-Page Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1;
+            background: url(—Pngtree—happy\ halloween\ flyer_15560411.png) no-repeat center center fixed;
+            background-size: cover;
+            color: #fef9f9;
+        }
+
+        header {
+            background: url(MuchaTseBle.jpeg) no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(236, 236, 245);
+            padding: 0rem 9rem;
+            text-align: center;
+        }
+
+        #login-section {
+            max-width: 400px;
+            margin: 3rem auto;
+            background: url(MuchaTseBle.jpeg) no-repeat center center fixed;
+            background-size: cover;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #login-section h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            align-self: flex-start;
+            margin-left: 0.2rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            margin-top: 0.5rem;
+            margin-bottom: 1.2rem;
+            padding: 0.8rem;
+            border-radius: 5px;
+            border: 2px solid #fffcfc;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0762ff;
+        }
+
+        .error-message {
+            color: #d93025;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JOKI RANK MLBB</h1>
+    </header>
+
+    <div id="login-section">
+        <h2>WELCOME</h2>
+        <div id="error" class="error-message" style="display: none;"></div>
+        <form action="halaman2.html">
+            <label for="username">Username</label>
+            <input type="text" id="username" autocomplete="username" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" autocomplete="current-password" required />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
